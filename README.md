@@ -6,8 +6,8 @@ Starter repo for Assignment 4. Fork this to get started.
 
 ```
 /dev
-  sketch1.html    - DO NOT EDIT — right-click and open this in Live Server to work on sketch 1
-  sketch2.html    - DO NOT EDIT — right-click and open this in Live Server to work on sketch 2
+  sketch1.html    - DO NOT EDIT — right-click and open this in Live Server to view your changes in sketch2.js (see below)
+  sketch2.html    - DO NOT EDIT — right-click and open this in Live Server to view your changes to sketch2.js (see below)
 /sketches
   sketch1.js      - your experiments on source sketch 1
   sketch2.js      - your experiments on source sketch 2
