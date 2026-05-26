@@ -1,5 +1,7 @@
 // =============================================
-// YOUR P5.JS CODE GOES BELOW
+// remix.js — your combined sketch
+// This is where sketch1 and sketch2 come together
+// into something new
 // =============================================
 
 function setup() {
