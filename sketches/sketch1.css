@@ -1,0 +1,37 @@
+@font-face { 
+  font-family: Touch Grass; 
+  src: url("TouchGrassVF.ttf");
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #17C332;
+}
+
+canvas {
+  display: block;
+  position: fixed;
+}
+
+#field {
+  position: fixed;
+  z-index: 1;
+  overflow: hidden;
+  margin: -24px;
+  font-family: 'Touch Grass';
+  font-weight: 1;
+  font-size: 48px;
+  line-height: 105%;
+/*   color: hsl(104 100 27); */
+  
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */  
+}
+
+span {
+  padding-top: 0.15em;
+/*   border: 1px solid; */
+}
