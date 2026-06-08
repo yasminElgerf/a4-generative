@@ -23,10 +23,14 @@ function draw() {
   fill("yellow");
   circle(width*.15, width*.15, width*.12);
 
-	//horns
-	fill("rgb(168,51,51)");
-	triangle(posX - width*.02, posY - width*.04, posX - width*.05, posY - width*.07, posX - width*.04, posY - width*.03);
-	triangle(posX + width*.02, posY - width*.04, posX + width*.05, posY - width*.07, posX + width*.04, posY - width*.03);
+    //bunny ears
+  fill("rgb(255,220,220)");
+  ellipse(posX - width*.035, posY - width*.065, width*.025, width*.08);
+  ellipse(posX + width*.035, posY - width*.065, width*.025, width*.08);
+
+  fill("rgb(255,150,170)");
+  ellipse(posX - width*.035, posY - width*.065, width*.012, width*.05);
+  ellipse(posX + width*.035, posY - width*.065, width*.012, width*.05);
 	
 	//face
 	fill("rgb(255,150,80)");
