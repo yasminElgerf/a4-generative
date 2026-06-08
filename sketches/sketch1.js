@@ -25,7 +25,7 @@ function draw() {
 	triangle(posX + width*.02, posY - width*.04, posX + width*.05, posY - width*.07, posX + width*.04, posY - width*.03);
 	
 	//face
-	fill("rgb(224,76,76)");
+	fill("rgb(255,150,80)");
 	circle(posX, posY, width*.2);
 	
 	//eyes
