@@ -4,7 +4,7 @@ let s;
 let angulo=0;
 let vel=0;
 
-let c1=33;
+let c1=22;
 let c2=88;
 let acc=0.01;
 
