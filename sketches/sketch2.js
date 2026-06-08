@@ -63,3 +63,7 @@ function draw() {
   "A black canvas with a set of white circles turning around a void, while thousands of little circles creates an algorithmic coreography in the other way. The canvas shows at the right corner written in lots of languages the word 'everything' ");
  
 }
+
+function mousePressed() {
+  acc = random(0.005, 0.05);
+}
