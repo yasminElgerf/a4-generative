@@ -87,3 +87,18 @@ function drawBunny() {
   line(posX - width*.015, posY + width*.025, posX + width*.015, posY + width*.025);
   noStroke();
 }
+
+function moveBunny() {
+  if (keyIsDown(65)) {
+    posX > width*.12 ? posX -= 3 : posX;
+  }
+  if (keyIsDown(68)) {
+    posX < width*.88 ? posX += 3 : posX;
+  }
+  if (keyIsDown(87)) {
+    posY > height*.12 ? posY -= 3 : posY;
+  }
+  if (keyIsDown(83)) {
+    posY < height*.88 ? posY += 3 : posY;
+  }
+}
