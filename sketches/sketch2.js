@@ -6,7 +6,7 @@ let vel=0;
 
 let c1=22;
 let c2=35;
-let acc=0.01;
+let acc=0.03;
 
 function setup() {
   createCanvas(700, 700);
