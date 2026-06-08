@@ -4,12 +4,12 @@ let s;
 let angulo=0;
 let vel=0;
 
-let c1=33;
-let c2=88;
-let acc=0.01;
+let c1=22;
+let c2=35;
+let acc=0.03;
 
 function setup() {
-  createCanvas(700, 1000);
+  createCanvas(700, 700);
   
   noStroke();
   s=width/99;
@@ -21,7 +21,9 @@ function draw() {
   push();
   translate(-width/6,height/6);
   
-  background(0,10);
+  background(50,200);
+  fill("blue");
+  circle(mouseX, mouseY, 40);
 
   let l0 = map(cos(angulo),-1,1,1*width/3,2*width/3);
   let l1 = map(sin(angulo),-1,1,1*width/3,2*height/3);
@@ -34,7 +36,7 @@ function draw() {
     rotate(i*TWO_PI/c1);
     translate(l0,0);
 
-    fill(255);
+    fill("rgb(255,180,220)");
     ellipse(0,0,s*2);
     rotate(-angulo);
     
@@ -43,8 +45,8 @@ function draw() {
       rotate(j*TWO_PI/c2);
       translate(l1,0);
 
-      fill(200);
-      ellipse(0,0,s/3);
+      fill("rgb(180,220,255)");
+      ellipse(0,0,s/1.5);
       pop();
     }
     pop();
@@ -62,4 +64,8 @@ function draw() {
   describe(
   "A black canvas with a set of white circles turning around a void, while thousands of little circles creates an algorithmic coreography in the other way. The canvas shows at the right corner written in lots of languages the word 'everything' ");
  
+}
+
+function mousePressed() {
+  acc = random(0.005, 0.05);
 }
