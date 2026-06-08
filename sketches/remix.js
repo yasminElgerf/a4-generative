@@ -41,6 +41,7 @@ function draw() {
   background(20, bgFade);
 
   drawWall();
+  drawBunny();
 }
 
 function drawWall() {
