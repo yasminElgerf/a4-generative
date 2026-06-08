@@ -56,3 +56,8 @@ function draw() {
     posY < width*.865 ? posY += 3 : posY;
   }
 }
+
+function mousePressed() {
+	posX = mouseX;
+	posY = mouseY;
+}
