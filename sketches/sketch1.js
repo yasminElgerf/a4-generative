@@ -16,7 +16,7 @@ function draw() {
 	stroke("rgb(88,146,138)");
 	strokeWeight(width*.08);
 	rectMode(CENTER);
-	rect(width/2, width/2, width*.88)
+	rect(width/2, width/2, width*.75)
 	noStroke();
 	
 	//horns
