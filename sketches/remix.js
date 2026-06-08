@@ -40,6 +40,8 @@ function resetSketch() {
 function draw() {
   background(20, bgFade);
 
+  moveBunny();
+  
   drawWall();
   drawBunny();
 }
