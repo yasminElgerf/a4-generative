@@ -43,16 +43,16 @@ function draw() {
 	}
 	
 	//movement
-	if (keyIsDown(65)) {
-    posX > width*.135 ? posX--: posX;
+  if (keyIsDown(65)) {
+    posX > width*.135 ? posX -= 3 : posX;
   }
   if (keyIsDown(68)) {
-    posX < width*.865 ? posX++: posX;
+    posX < width*.865 ? posX += 3 : posX;
   }
-	if (keyIsDown(87)) {
-    posY > width*.135 ? posY--: posY;
+  if (keyIsDown(87)) {
+    posY > width*.135 ? posY -= 3 : posY;
   }
   if (keyIsDown(83)) {
-    posY < width*.865 ? posY++: posY;
+    posY < width*.865 ? posY += 3 : posY;
   }
 }
