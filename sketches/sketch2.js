@@ -5,7 +5,7 @@ let angulo=0;
 let vel=0;
 
 let c1=22;
-let c2=88;
+let c2=35;
 let acc=0.01;
 
 function setup() {
