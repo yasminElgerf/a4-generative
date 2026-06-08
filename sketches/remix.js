@@ -43,6 +43,7 @@ function draw() {
   moveBunny();
 
   drawWall();
+  drawOrbitSystem();
   drawBunny();
 }
 
@@ -111,4 +112,29 @@ function mousePressed() {
 
   acc = random(0.005, 0.05);
   bgFade = random(10, 80);
+}
+
+function drawOrbitSystem() {
+  let l0 = map(cos(angulo), -1, 1, width*.15, width*.35);
+  let l1 = map(sin(angulo), -1, 1, width*.05, width*.25);
+
+  push();
+  translate(posX, posY);
+  rotate(angulo);
+
+  for (let i = 0; i < c1; i++) {
+    push();
+    rotate(i * TWO_PI / c1);
+    translate(l0, 0);
+
+    fill("rgb(255,180,220)");
+    ellipse(0, 0, s * 2);
+
+    pop();
+  }
+
+  pop();
+
+  angulo = vel;
+  vel += acc;
 }
