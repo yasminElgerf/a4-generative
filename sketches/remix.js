@@ -158,3 +158,11 @@ function drawOrbitSystem() {
   angulo = vel;
   vel += acc;
 }
+
+
+
+function keyPressed() {
+  if (key === 'r' || key === 'R') {
+    resetSketch();
+  }
+}
