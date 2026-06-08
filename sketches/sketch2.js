@@ -34,7 +34,7 @@ function draw() {
     rotate(i*TWO_PI/c1);
     translate(l0,0);
 
-    fill(255);
+    fill("rgb(255,180,220)");
     ellipse(0,0,s*2);
     rotate(-angulo);
     
