@@ -44,7 +44,7 @@ function draw() {
       translate(l1,0);
 
       fill("rgb(180,220,255)");
-      ellipse(0,0,s/3);
+      ellipse(0,0,s/1.5);
       pop();
     }
     pop();
