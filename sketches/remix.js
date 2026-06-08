@@ -42,3 +42,12 @@ function draw() {
 
   drawWall();
 }
+
+function drawWall() {
+  noFill();
+  stroke("rgb(88,146,138)");
+  strokeWeight(width * 0.04);
+  rectMode(CENTER);
+  rect(width / 2, height / 2, width * 0.8);
+  noStroke();
+}
