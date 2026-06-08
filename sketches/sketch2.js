@@ -22,6 +22,8 @@ function draw() {
   translate(-width/6,height/6);
   
   background(50,200);
+  fill("blue");
+  circle(mouseX, mouseY, 40);
 
   let l0 = map(cos(angulo),-1,1,1*width/3,2*width/3);
   let l1 = map(sin(angulo),-1,1,1*width/3,2*height/3);
