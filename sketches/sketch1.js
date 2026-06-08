@@ -36,6 +36,10 @@ function draw() {
 	fill(0);
 	ellipse(posX - width*.02, posY - width*.01, width*.015, width*.02);
 	ellipse(posX + width*.02, posY - width*.01, width*.015, width*.02);
+
+  //nose
+  fill("rgb(120,60,40)");
+  triangle(posX, posY, posX - width*.008, posY + width*.01, posX + width*.008, posY + width*.01);
 	
 	//mouth
 	if(mouseIsPressed == true){
