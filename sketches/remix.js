@@ -1,14 +1,12 @@
-// =============================================
-// remix.js — your combined sketch
-// This is where sketch1 and sketch2 come together
-// into something new
-// =============================================
+let posX, posY;
+let s, m;
 
-function setup() {
-  createCanvas(800, 500);
-}
+let angulo = 0;
+let vel = 0;
+let acc = 0.02;
 
-function draw() {
-  background(220);
-  // your combined code here
-}
+let c1 = 22;
+let c2 = 35;
+
+let bunnySize;
+let bgFade = 35;
