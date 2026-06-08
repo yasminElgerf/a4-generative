@@ -10,3 +10,15 @@ let c2 = 35;
 
 let bunnySize;
 let bgFade = 35;
+
+function setup() {
+  createCanvas(700, 700);
+  noStroke();
+
+  s = width / 99;
+  m = height / 66;
+
+  posX = width / 2;
+  posY = height / 2;
+  bunnySize = width * 0.15;
+}
