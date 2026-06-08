@@ -41,7 +41,7 @@ function draw() {
   background(20, bgFade);
 
   moveBunny();
-  
+
   drawWall();
   drawBunny();
 }
@@ -103,4 +103,12 @@ function moveBunny() {
   if (keyIsDown(83)) {
     posY < height*.88 ? posY += 3 : posY;
   }
+}
+
+function mousePressed() {
+  posX = mouseX;
+  posY = mouseY;
+
+  acc = random(0.005, 0.05);
+  bgFade = random(10, 80);
 }
