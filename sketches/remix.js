@@ -114,9 +114,11 @@ function mousePressed() {
   bgFade = random(10, 80);
 }
 
+// Asked ChatGPT for this part
+// Prompt: Use the sketch-2.js as a reference and add something like an orbit system around this bunny.
 function drawOrbitSystem() {
-  let l0 = map(cos(angulo), -1, 1, width*.15, width*.35);
-  let l1 = map(sin(angulo), -1, 1, width*.05, width*.25);
+  let l0 = map(cos(angulo), -1, 1, width * 0.15, width * 0.35);
+  let l1 = map(sin(angulo), -1, 1, width * 0.05, width * 0.25);
 
   push();
   translate(posX, posY);
@@ -129,6 +131,19 @@ function drawOrbitSystem() {
 
     fill("rgb(255,180,220)");
     ellipse(0, 0, s * 2);
+
+    rotate(-angulo);
+
+    for (let j = 0; j < c2; j++) {
+      push();
+      rotate(j * TWO_PI / c2);
+      translate(l1, 0);
+
+      fill("rgb(180,220,255)");
+      ellipse(0, 0, s / 1.5);
+
+      pop();
+    }
 
     pop();
   }
