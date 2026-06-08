@@ -9,7 +9,7 @@ let c2=88;
 let acc=0.01;
 
 function setup() {
-  createCanvas(700, 1000);
+  createCanvas(700, 700);
   
   noStroke();
   s=width/99;
