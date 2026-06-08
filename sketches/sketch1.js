@@ -9,29 +9,41 @@ function setup() {
 }
 
 function draw() {
-	background("rgb(147, 184, 171)");
+	background("rgb(120, 160, 200)");
 	noFill()
 	
 	//wall
 	stroke("rgb(88,146,138)");
-	strokeWeight(width*.05);
+	strokeWeight(width*.08);
 	rectMode(CENTER);
-	rect(width/2, width/2, width*.88)
+	rect(width/2, width/2, width*.75)
 	noStroke();
 	
-	//horns
-	fill("rgb(168,51,51)");
-	triangle(posX - width*.02, posY - width*.04, posX - width*.05, posY - width*.07, posX - width*.04, posY - width*.03);
-	triangle(posX + width*.02, posY - width*.04, posX + width*.05, posY - width*.07, posX + width*.04, posY - width*.03);
+  //random sun
+  fill("yellow");
+  circle(width*.15, width*.15, width*.12);
+
+  //bunny ears
+  fill("rgb(255,220,220)");
+  ellipse(posX - width*.035, posY - width*.065, width*.025, width*.08);
+  ellipse(posX + width*.035, posY - width*.065, width*.025, width*.08);
+
+  fill("rgb(255,150,170)");
+  ellipse(posX - width*.035, posY - width*.065, width*.012, width*.05);
+  ellipse(posX + width*.035, posY - width*.065, width*.012, width*.05);
 	
-	//face
-	fill("rgb(224,76,76)");
-	circle(posX, posY, width*.1);
-	
+  //face
+  fill("rgb(255,170,190)");
+  circle(posX, posY, width*.15);
+    
 	//eyes
 	fill(0);
 	ellipse(posX - width*.02, posY - width*.01, width*.015, width*.02);
 	ellipse(posX + width*.02, posY - width*.01, width*.015, width*.02);
+
+  //nose
+  fill("rgb(120,60,40)");
+  triangle(posX, posY, posX - width*.008, posY + width*.01, posX + width*.008, posY + width*.01);
 	
 	//mouth
 	if(mouseIsPressed == true){
@@ -43,16 +55,21 @@ function draw() {
 	}
 	
 	//movement
-	if (keyIsDown(65)) {
-    posX > width*.135 ? posX--: posX;
+  if (keyIsDown(65)) {
+    posX > width*.135 ? posX -= 3 : posX;
   }
   if (keyIsDown(68)) {
-    posX < width*.865 ? posX++: posX;
+    posX < width*.865 ? posX += 3 : posX;
   }
-	if (keyIsDown(87)) {
-    posY > width*.135 ? posY--: posY;
+  if (keyIsDown(87)) {
+    posY > width*.135 ? posY -= 3 : posY;
   }
   if (keyIsDown(83)) {
-    posY < width*.865 ? posY++: posY;
+    posY < width*.865 ? posY += 3 : posY;
   }
+}
+
+function mousePressed() {
+	posX = mouseX;
+	posY = mouseY;
 }
