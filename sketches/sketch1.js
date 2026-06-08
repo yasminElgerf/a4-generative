@@ -9,7 +9,7 @@ function setup() {
 }
 
 function draw() {
-	background("rgb(161,208,192)");
+	background("rgb(147, 184, 171)");
 	noFill()
 	
 	//wall
