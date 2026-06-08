@@ -21,7 +21,7 @@ function draw() {
   push();
   translate(-width/6,height/6);
   
-  background(0,10);
+  background(50,200);
 
   let l0 = map(cos(angulo),-1,1,1*width/3,2*width/3);
   let l1 = map(sin(angulo),-1,1,1*width/3,2*height/3);
