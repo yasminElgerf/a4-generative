@@ -26,7 +26,7 @@ function draw() {
 	
 	//face
 	fill("rgb(224,76,76)");
-	circle(posX, posY, width*.1);
+	circle(posX, posY, width*.2);
 	
 	//eyes
 	fill(0);
