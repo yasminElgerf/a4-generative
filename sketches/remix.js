@@ -84,10 +84,12 @@ function drawBunny() {
   line(posX, posY + width*.012, posX, posY + width*.025);
   noStroke();
 
-  //mouth
+ 
+  //smile
+  noFill();
   stroke(0);
-  strokeWeight(width*.005);
-  line(posX - width*.015, posY + width*.025, posX + width*.015, posY + width*.025);
+  strokeWeight(width*.004);
+  arc(posX, posY + width*.02, width*.03, width*.02, 0, PI);
   noStroke();
 }
 
