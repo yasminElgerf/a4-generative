@@ -72,9 +72,14 @@ function drawBunny() {
   ellipse(posX - width*.02, posY - width*.01, width*.015, width*.02);
   ellipse(posX + width*.02, posY - width*.01, width*.015, width*.02);
 
-  //nose
-  fill("rgb(120,60,40)");
-  triangle(posX, posY, posX - width*.008, posY + width*.01, posX + width*.008, posY + width*.01);
+  //bunny nose
+  fill("rgb(255,110,150)");
+  ellipse(posX, posY + width*.005, width*.018, width*.012);
+
+  stroke(0);
+  strokeWeight(width*.003);
+  line(posX, posY + width*.012, posX, posY + width*.025);
+  noStroke();
 
   //mouth
   stroke(0);
