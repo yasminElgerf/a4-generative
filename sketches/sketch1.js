@@ -23,7 +23,7 @@ function draw() {
   fill("yellow");
   circle(width*.15, width*.15, width*.12);
 
-    //bunny ears
+  //bunny ears
   fill("rgb(255,220,220)");
   ellipse(posX - width*.035, posY - width*.065, width*.025, width*.08);
   ellipse(posX + width*.035, posY - width*.065, width*.025, width*.08);
@@ -32,10 +32,10 @@ function draw() {
   ellipse(posX - width*.035, posY - width*.065, width*.012, width*.05);
   ellipse(posX + width*.035, posY - width*.065, width*.012, width*.05);
 	
-	//face
-	fill("rgb(255,150,80)");
-	circle(posX, posY, width*.2);
-	
+  //face
+  fill("rgb(255,170,190)");
+  circle(posX, posY, width*.15);
+    
 	//eyes
 	fill(0);
 	ellipse(posX - width*.02, posY - width*.01, width*.015, width*.02);
