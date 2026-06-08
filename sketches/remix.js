@@ -36,3 +36,9 @@ function resetSketch() {
 
   bgFade = 35;
 }
+
+function draw() {
+  background(20, bgFade);
+
+  drawWall();
+}
