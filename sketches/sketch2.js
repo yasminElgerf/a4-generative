@@ -43,7 +43,7 @@ function draw() {
       rotate(j*TWO_PI/c2);
       translate(l1,0);
 
-      fill(200);
+      fill("rgb(180,220,255)");
       ellipse(0,0,s/3);
       pop();
     }
