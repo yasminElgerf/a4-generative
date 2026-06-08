@@ -22,3 +22,17 @@ function setup() {
   posY = height / 2;
   bunnySize = width * 0.15;
 }
+
+function resetSketch() {
+  posX = width / 2;
+  posY = height / 2;
+
+  angulo = 0;
+  vel = 0;
+  acc = 0.02;
+
+  c1 = 22;
+  c2 = 35;
+
+  bgFade = 35;
+}
