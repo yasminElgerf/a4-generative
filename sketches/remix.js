@@ -49,7 +49,7 @@ function draw() {
 
 function drawWall() {
   noFill();
-  stroke("rgb(88,146,138)");
+  stroke("rgb(146, 88, 125)");
   strokeWeight(width * 0.04);
   rectMode(CENTER);
   rect(width / 2, height / 2, width * 0.8);
@@ -122,8 +122,8 @@ function drawOrbitSystem() {
   let mouseDistance = dist(mouseX, mouseY, posX, posY);
   let changingC2 = int(map(mouseDistance, 0, width, 10, 60));
 
-  let l0 = map(cos(angulo), -1, 1, width * 0.15, width * 0.35);
-  let l1 = map(sin(angulo), -1, 1, width * 0.05, width * 0.25);
+  let l0 = map(cos(angulo), -1, 1, width * 0.10, width * 0.25);
+  let l1 = map(sin(angulo), -1, 1, width * 0.05, width * 0.15);
 
   push();
   translate(posX, posY);
