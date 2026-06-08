@@ -51,3 +51,26 @@ function drawWall() {
   rect(width / 2, height / 2, width * 0.8);
   noStroke();
 }
+
+function drawBunny() {
+  //ears
+  fill("rgb(255,220,220)");
+  ellipse(posX - width*.035, posY - width*.065, width*.025, width*.08);
+  ellipse(posX + width*.035, posY - width*.065, width*.025, width*.08);
+
+  fill("rgb(255,150,170)");
+  ellipse(posX - width*.035, posY - width*.065, width*.012, width*.05);
+  ellipse(posX + width*.035, posY - width*.065, width*.012, width*.05);
+
+  //face
+  fill("rgb(255,170,190)");
+  circle(posX, posY, bunnySize);
+
+
+
+  //mouth
+  stroke(0);
+  strokeWeight(width*.005);
+  line(posX - width*.015, posY + width*.025, posX + width*.015, posY + width*.025);
+  noStroke();
+}
